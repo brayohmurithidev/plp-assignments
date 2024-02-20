@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PLP Week 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        width: 80vw;
+        margin: 0 auto;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 30px 0;
+      }
+      .section-header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        font-size: 40px;
+        color: #ff7f11;
+        font-weight: 900;
+      }
+      .title-underline {
+        width: 100px;
+        border: 2px solid #b6dcfe;
+        margin-bottom: 30px;
+      }
+      #home p,
+      #gallery p,
+      #menu p {
+        margin: 15px 0;
+      }
+      #home,
+      #menu,
+      #gallery {
+        margin-top: 40px;
+      }
+      .grid-images {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+      }
+      .grid-images img {
+        border-radius: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th{
+        font-size: 24px;
+      }
+      td,
+      th {
+        border-bottom: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- CONST HOME PAGE -->
+    <div id="home">
+      <div class="section-header">
+        <h3>Hey there!</h3>
+        <div class="title-underline"></div>
+      </div>
+      <p>Welcome to week 2. Will show the usage of images in our websites.</p>
+      <img
+        src="plp.png"
+        alt="PLP image on technology"
+        width="600px"
+        height="400px"
+      />
+    </div>
+    <!-- GALLERY SECTION -->
+    <div id="gallery">
+      <!-- HEADING -->
+      <div class="section-header">
+        <h3>Nature Gallery</h3>
+        <div class="title-underline"></div>
+      </div>
+
+      <p>Checkout some cool nature images</p>
+      <div class="grid-images">
+        <img
+          src="https://cdn.pixabay.com/photo/2024/02/17/11/43/timanfaya-8579182_960_720.jpg"
+          alt="Timanfaya Volcanic"
+          width="100%"
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2024/02/17/11/43/timanfaya-8579182_960_720.jpg"
+          alt="Timanfaya Volcanic"
+          width="100%"
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2024/02/15/10/20/motorboat-8575141_960_720.jpg"
+          alt="Timanfaya Volcanic"
+          width="100%"
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2024/02/17/11/43/timanfaya-8579182_960_720.jpg"
+          alt="Timanfaya Volcanic"
+          width="100%"
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2024/02/17/11/43/timanfaya-8579182_960_720.jpg"
+          alt="Timanfaya Volcanic"
+          width="100%"
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2024/02/17/11/43/timanfaya-8579182_960_720.jpg"
+          alt="Timanfaya Volcanic"
+          width="100%"
+        />
+        <img
+          src="https://cdn.pixabay.com/photo/2024/02/17/11/43/timanfaya-8579182_960_720.jpg"
+          alt="Timanfaya Volcanic"
+          width="100%"
+        />
+      </div>
+    </div>
+    <!-- Menu Section -->
+    <div id="menu">
+      <div class="section-header">
+        <h3>Menu</h3>
+        <div class="title-underline"></div>
+      </div>
+      <p>Checkout our menu</p>
+      <div class="menu-list">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th style="width: 10%;">Image</th>
+              <th>Food item</th>
+              <th>Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <img
+                  src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg"
+                  alt="Burger"
+                  width="100%"
+                />
+              </td>
+              <td>Burger</td>
+              <td>$30</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <img
+                  src="https://cdn.pixabay.com/photo/2014/11/05/15/57/salmon-518032_960_720.jpg"
+                  alt="Salmon Fish Seafood"
+                  width="100%"
+                />
+              </td>
+              <td>Salmon Fish Seafood</td>
+              <td>$97</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <img
+                  src="https://cdn.pixabay.com/photo/2017/12/10/14/47/pizza-3010062_960_720.jpg"
+                  alt="Pizza"
+                  width="100%"
+                />
+              </td>
+              <td>Pizza</td>
+              <td>$120</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>
+                <img
+                  src="https://cdn.pixabay.com/photo/2013/06/09/06/07/meat-123668_960_720.jpg"
+                  alt="Meat Barbecue"
+                  width="100%"
+                />
+              </td>
+              <td>Meat Barbecue</td>
+              <td>$273</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>
+                <img
+                  src="https://cdn.pixabay.com/photo/2015/07/12/14/26/coffee-842020_960_720.jpg"
+                  alt="Yummy Breakfast"
+                  width="100%"
+                />
+              </td>
+              <td>Yummy Breakfast</td>
+              <td>$45</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
