@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            width: 80vw;
+            margin: 20px auto;
+        }
+        nav{
+
+            background-color: #B6DCFE;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo{
+            color: #FF7F11;
+            font-weight: 900;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        nav ul {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: #000;
+        }
+        nav ul li a:hover{
+            color: #FF7F11;
+        }
+        nav ul li a:active{
+            color: #FF7F11;
+        }
+        .hero-section{
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        }
+        .hero-section-text{
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        .hero-section-text h3{
+            font-size: 34px;
+            color: #FF7F11;
+        }
+        #about, #projects{
+            min-height: 40vh;
+        }
+        .section-header{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            font-size: 40px;
+            color: #FF7F11;
+            font-weight: 900;
+           
+        }
+        .title-underline{
+            width: 100px;
+            border: 2px solid #B6DCFE;
+            margin-bottom: 30px;
+        }
+        #about p, #projects p{
+            text-align: justify;
+            margin: 15px 0;
+        }
+        #about ul, #projects ul{
+            margin-left: 10%;
+        }
+    </style>
+
+
+
+
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <h2>Brian Murithi</h2>
+        </div>
+        <ul>
+            <li><a href="portfolio.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECTION INTRO -->
+    <div class="hero-section">
+        <div>
+            <img src="plp-hero.png" width="100%" alt="Power Learn Project" />
+        </div>
+        <div class="hero-section-text">
+            <h3>FIRST PLP ASSIGNMENT</h3>
+            <p>This a basic website design. It is a submission as part of my PLP assignment</p>
+        </div>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div id="about">
+        <div class="section-header">
+            <h3 >About Me</h3>
+            <div class="title-underline"></div>
+        </div>
+        
+        <p>I am Brian Murithi, a passionate web developer. I am currently working to prepare myself for the tech market, and as part of this endeavor, I have joined a 4-month program at PLP to enhance my skills and readiness.</p>
+        <p>In addition to my studies at PLP, I have obtained an undergraduate degree in Computer Science and have also I graduated in a software engineering course at ALX Africa. These experiences have provided me with a diverse range of knowledge in various areas of web development.</p>
+        <p style="font-weight: 600;">Here is an overview of my skills:</p>
+        <ul>
+            <li>Web development stack languages: React.js, Node.js, Python Flask, JavaScript, HTML, CSS, and Material UI</li>
+            <li>SQL and NoSQL Database Management: I have experience with MySQL, PostgreSQL, Firebase, and MongoDB</li>
+            <li>Server Management: Proficient in server management with tools such as Nginx and HAProxy</li>
+            <li>Linux System Usage and Maintenance</li>
+        </ul>
+    </div>
+    
+
+
+    <!-- PROJECTS -->
+    <div id="projects">
+        <div class="section-header">
+            <h3 >Projects</h3>
+            <div class="title-underline"></div>
+        </div>
+        <p style="font-weight: 600;">Here is a list of projects have worked on</p>
+        <ul>
+            <li>Todo List</li>
+            <li>Calculator</li>
+            <li>E-commerce website (sells watches)</li>
+            <li>Bus booking system</li>
+        </ul>
+    </div>
+
+
+
+</body>
+</html>
