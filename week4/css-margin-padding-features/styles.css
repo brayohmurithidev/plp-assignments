@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #F6F1EE;
+    color: #112A46;
+}
+
+
+/* MOBILE FIRST APPROACH */
+@media screen and (min-width: 0) {
+    .header{
+        height: 60px;
+        background-color: #023047;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .header h1{
+        color: #FF7F11;
+        font-weight: 900;
+    }
+    main{
+        width: 98%;
+        margin: 0 auto;
+    }
+    
+    .section-header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        margin: 20px 0; 
+    }
+    .section-header h3{
+        font-size: 40px;
+        color: #FF7F11;
+        font-weight: 900;
+    }
+    .section-header h4{
+        font-size: 24px;
+    }
+    .title-underline{
+        width: 100px;
+        border: 2px solid #023047;
+        margin-bottom: 30px;
+    }
+    
+    #introduction{
+        background-color: #FF7F11;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 400;
+        word-spacing: 0.2em;
+        margin: 20px auto;
+        padding: 20px;
+        box-sizing: border-box;
+       font-size: 18px;
+    }
+    .skillsWrapper{
+        display: flex;
+        justify-content: space-around;
+        align-items: start;
+    }
+    .skillsWrapper ul{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .skillsWrapper ul li{
+        border: 1px solid #023047;
+        padding: 5px;
+    }
+    #contact{
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+    .contact-wrapper{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+      }
+      .contact-form-wrapper{ 
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .form-control{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+    }
+    .form-control label{
+       font-weight: 600;
+       font-size: 14px;
+    }
+    .form-control input, .form-control textarea {
+        padding: 10px 8px;
+       border: 1px solid #023047;
+       border-radius: 10px;
+       
+    }
+    .contact-form-wrapper button{
+        background-color: #FF7F11;
+        padding: 20px 8px;
+        font-size: 20px;
+        color: #023047;
+        border-radius: 16px;
+        cursor: pointer;
+    }
+    .contact-info-wrapper{
+        background-color: #023047;
+        color: #FF7F11;
+        box-sizing: border-box;
+        padding: 20px;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .contacts{
+        display: flex;
+        gap: 20px;
+        margin-bottom: 10px;
+    }
+    .social-media-wrapper{
+        display: flex;
+        gap: 10px;
+    }  
+    
+   
+}
+
+/* ipads screens */
+@media screen and (min-width: 600px) {
+    main{
+        width: 80%;
+        margin: 0 auto;
+    }
+    #contact{
+        border-bottom: 1px solid #023047;
+        /* padding: 20px; */
+
+        margin-bottom: 40px;
+        
+    }
+    .contact-wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+      }  
+}
+
+
+@media screen and (min-width: 1280px) {
+.header{
+    height: 100px;
+}
+    main{
+    width: 60%;
+}
+#contact{
+    width: 80%;
+}
+
+}
